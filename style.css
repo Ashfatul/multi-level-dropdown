@@ -1,7 +1,4 @@
 /* download font */
-
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-
 /* reset */
 
 * {
@@ -10,7 +7,7 @@
 }
 
 body {
-   font-family: "Dancing Script", cursive;
+   font-family: cursive;
 }
 
 /* loader */
@@ -160,7 +157,6 @@ main {
    justify-content: center;
    text-align: center;
    padding: 20px;
-   font-family: cursive;
 }
 
 .modal-body p {
@@ -194,7 +190,6 @@ main {
 }
 
 .modal-close {
-   font-family: cursive;
    height: 25px;
    width: 25px;
    border-radius: 50%;
@@ -239,7 +234,6 @@ button.modal-cancel:hover {
    padding: 10px 20px;
    margin-top: 30px;
    font-size: 20px;
-   font-family: cursive;
    background: #259771;
    color: #ffffff;
    border-radius: 10px;
@@ -259,8 +253,4 @@ button.modal-cancel:hover {
 
 button.display-modal:active {
    transform: scale(0.9);
-}
-
-.toast-message {
-   font-family: "monospace" !important;
 }
