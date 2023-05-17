@@ -1,7 +1,75 @@
+/* download font */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* reset */
+
 * {
    margin: 0;
    padding: 0;
 }
+
+body {
+   font-family: "Dancing Script", cursive;
+}
+
+/* loader */
+
+.loader-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-size: 5rem;
+   font-variant: small-caps;
+   background: rgb(0, 0, 0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 99999;
+}
+
+.loader-text {
+   background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff00bf,
+      #8000ff,
+      #0040ff,
+      #00ffff,
+      #00ff40,
+      #80ff00,
+      #ffbf00,
+      #ff0000,
+      #90d7e9
+   );
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: colorAnimation 2s linear infinite;
+   background-size: 300%;
+   background-position: 0% 0%;
+   opacity: 0;
+}
+
+@keyframes colorAnimation {
+   25% {
+      background-position: 25% 25%;
+   }
+   50% {
+      background-position: 50% 50%;
+      opacity: 1;
+   }
+   75% {
+      background-position: 75% 75%;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+/* drop down menu */
 
 ul {
    background: darkcyan;
@@ -13,7 +81,7 @@ ul {
 }
 
 ul li {
-   padding: 15px 20px;
+   padding: 10.5px 20px;
    cursor: pointer;
    position: relative;
 }
@@ -26,7 +94,7 @@ ul li ul {
    display: none;
    position: absolute;
    left: 0;
-   top: 48px;
+   top: 40px;
    min-width: 200px;
    background: rgb(11, 103, 126);
 }
@@ -38,4 +106,21 @@ ul li:hover > ul {
 ul li ul li ul {
    top: 0px;
    left: 200px;
+}
+
+/* content */
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh - 40px);
+   flex-direction: column;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://wallpaper.dog/large/10712754.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #fff;
+   font-size: 2rem;
 }
