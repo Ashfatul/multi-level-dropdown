@@ -4,14 +4,45 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+         integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
       <link rel="stylesheet" href="style.css" />
       <title>Multi level dropdown</title>
    </head>
    <body>
+      <!-- loader -->
       <div class="loader-container">
          <div class="loader-text">Loading ...</div>
       </div>
 
+      <!-- modal -->
+      <div class="modal-container">
+         <div class="modal">
+            <div class="modla-title">
+               <div class="modal-text">Subscribe</div>
+               <button class="modal-close">X</button>
+            </div>
+            <div class="modal-body">
+               <p>Would you like to receive News Latter?</p>
+               <input
+                  type="email"
+                  placeholder="email@example.com"
+                  class="email-input"
+               />
+            </div>
+            <div class="modal-action">
+               <button class="modal-cancel">Cancel</button>
+               <button class="modal-accept">Join Now</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- nav -->
       <nav>
          <ul>
             <li>Home</li>
@@ -67,16 +98,25 @@
          </ul>
       </nav>
 
+      <!-- content -->
       <main>
          <h1>Welcome</h1>
          <p>Website has finished loading!</p>
          <p>This site is to demonstrate multilevel dropdown menu</p>
+         <button class="display-modal">Display Modal</button>
       </main>
 
       <script
          src="https://code.jquery.com/jquery-3.6.0.min.js"
          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
          crossorigin="anonymous"
+      ></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
       ></script>
       <script src="script.js"></script>
    </body>

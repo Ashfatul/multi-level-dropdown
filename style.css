@@ -124,3 +124,143 @@ main {
    color: #fff;
    font-size: 2rem;
 }
+
+/* modal style */
+
+.modal-container {
+   position: fixed;
+   background: rgba(0, 0, 0, 0.75);
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* display: none; */
+}
+
+.modal {
+   min-width: 50%;
+   background: #fff;
+   border-radius: 5px;
+}
+
+.modla-title {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 20px;
+   border-bottom: 1px solid lightgray;
+   font-size: 1.5rem;
+   font-weight: bold;
+   user-select: none;
+}
+
+.modal-body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+   font-family: cursive;
+}
+
+.modal-body p {
+   margin-bottom: 20px;
+}
+
+.modal-body input {
+   font-size: 1.2rem;
+   padding: 10px;
+   text-align: center;
+   width: 80%;
+   margin: auto;
+   border: none;
+   background: rgb(225, 237, 241);
+   border-radius: 5px;
+}
+
+.modal-action {
+   display: flex;
+   justify-content: end;
+   padding: 10px 20px;
+   border-top: 1px solid lightgray;
+   gap: 1rem;
+}
+
+.modal-action button {
+   padding: 10px 20px;
+   font-size: 15px;
+   font-variant: small-caps;
+   cursor: pointer;
+}
+
+.modal-close {
+   font-family: cursive;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+button.modal-close:hover {
+   color: #fff;
+   background: red;
+}
+
+button.modal-accept {
+   background: #0099ff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+}
+
+button.modal-accept:hover {
+   background: #00aeff;
+}
+
+button.modal-cancel {
+   background: #8d3f3f;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+}
+
+button.modal-cancel:hover {
+   background: red;
+}
+
+.modal-body input:focus-visible {
+   outline: none;
+   background: antiquewhite;
+}
+
+.display-modal {
+   padding: 10px 20px;
+   margin-top: 30px;
+   font-size: 20px;
+   font-family: cursive;
+   background: #259771;
+   color: #ffffff;
+   border-radius: 10px;
+   border: none;
+   border-bottom: 5px solid #fff;
+   border-right: 3px solid #fff;
+   cursor: pointer;
+}
+
+.show {
+   display: flex;
+}
+
+.display-modal:hover {
+   background: #14694d;
+}
+
+button.display-modal:active {
+   transform: scale(0.9);
+}
+
+.toast-message {
+   font-family: "monospace" !important;
+}
